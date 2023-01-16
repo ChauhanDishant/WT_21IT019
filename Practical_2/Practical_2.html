@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="Calc.js"></script>
+    <style>
+        #one {
+            color: black;
+            background-color: olivedrab;
+        }
+
+        #two {
+            color: black;
+            /* background-color: olivedrab; */
+        }
+
+        #tab {
+            border-style: solid;
+            color: black;
+            background-color: white;
+            border-color: aquamarine;
+            border-width: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+        }
+
+        #cent {
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body bgcolor="Skyblue">
+    <table id="tab">
+        <h3 align="center">Using the Prompt Method</h2>
+            <tr>
+                <td>
+                    <button id="one" align="center" onclick="sum()">Enter for the Addition</button>
+                    <p id="two">The addition of two numbers is : </p>
+                    <p id="demo"></p>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <button id="one" align="center" onclick="sub()">Enter for the Substraction</button>
+                    <p id="two">The substraction of two numbers is : </p>
+                    <p id="demo1"></p>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <button id="one" align="center" onclick="mutliplication()">Enter for the Multiplication</button>
+                    <p id="two">"The Multiplication of two Numbers is : "</p>
+                    <h3 id="demo2"></h3>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <button id="one" align="center" onclick="division()">Enter for the Divsion</button>
+                    <p id="two">The Division of two numbers is : </p>
+                    <h3 id="demo3"></h3>
+                </td>
+            </tr>
+            <br>
+    </table>
+    <table>
+        <tr id="cent">
+            <div>
+                <h3 id="prompt">Using the Textbox Method</h3>
+                <input align="center" type="text" id="val1" placeholder="1st number">&nbsp;&nbsp;
+                <input align="center" type="text" id="val2" placeholder="2nd number"><br><br>
+                <button align="center" id="cal1" onclick="get(value)" value="sum">Addition</button>
+                <button align="center" id="cal2" onclick="get(value)" value="substract">Substract</button>
+                <button align="center" id="cal1" onclick="get(value)" value="multi">Multiplication</button>
+                <button align="center" id="cal1" onclick="get(value)" value="div">Division</button>
+                <div id="demo2"></div><br><br>
+            </div>
+            <h1>Temperature Converter</h1>
+            <p>Enter temperature in Celsius</p>
+            <input type="text" id="celsius" placeholder="Enter temperature in Celsius">
+            <button onclick="convert()">Convert</button>
+            <p id="result"></p>
+            <script>
+                function convert() {
+                    var celsius = document.getElementById("celsius").value;
+                    var fahrenheit = (celsius * 9 / 5) + 32;
+                    document.getElementById("result").innerHTML = fahrenheit;
+                }           
+            </script>   
+</body>
+
+</html>
+</tr>
+</table>
+</body>
+
+</html>
